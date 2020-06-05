@@ -1,11 +1,8 @@
 {
-  "main": "node_modules/expo/AppEntry.js",
   "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
+    "start": "react-native start",
+    "android": "react-native run-android",
     "web": "expo start --web",
-    "eject": "expo eject",
     "test": "jest --watchAll"
   },
   "jest": {
@@ -23,17 +20,23 @@
     "expo-font": "~8.1.0",
     "expo-linking": "^1.0.1",
     "expo-splash-screen": "^0.2.3",
+    "expo-updates": "~0.2.0",
     "expo-web-browser": "~8.2.0",
     "react": "~16.9.0",
     "react-dom": "~16.9.0",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-37.0.1.tar.gz",
+    "react-native": "~0.61.5",
     "react-native-gesture-handler": "~1.6.0",
+    "react-native-reanimated": "~1.7.0",
     "react-native-safe-area-context": "0.7.3",
     "react-native-screens": "~2.2.0",
+    "react-native-unimodules": "~0.9.0",
     "react-native-web": "~0.11.7"
   },
   "devDependencies": {
     "@babel/core": "^7.8.6",
+    "babel-jest": "~25.2.6",
+    "jest": "~25.2.6",
+    "react-test-renderer": "~16.9.0",
     "babel-preset-expo": "~8.1.0",
     "jest-expo": "~37.0.0"
   },
