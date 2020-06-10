@@ -46,8 +46,8 @@ class ConnectedDoneList extends React.Component {
     const keys = Object.keys(this.state.doneList);
     return (
       <View ref="DoneRef" style={styles.container}>
-        <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
-          <View style={styles.welcomeContainer}>
+        <ScrollView contentContainerStyle={styles.contentContainer}>
+          <View>
             {
               keys.map(key => <TodoItem key={key} item={this.state.doneList[key]} onPress={() => this.moveToDoneList({ ...this.state.doneList[key], key: key })} />)
             }

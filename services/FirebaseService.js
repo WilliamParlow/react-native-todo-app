@@ -28,4 +28,8 @@ export default class FirebaseService {
     static signInWithEmailAndPassword = (email, password) => {
         return firebase.auth().signInWithEmailAndPassword(email, password);
     }
+
+    static signOut = () => {
+        return firebase.auth().signOut();
+    }
 }

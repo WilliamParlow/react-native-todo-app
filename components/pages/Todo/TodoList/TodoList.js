@@ -46,8 +46,8 @@ class ConnectedTodoList extends React.Component {
     const keys = Object.keys(this.state.todoList);
     return (
       <View style={styles.container}>
-        <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
-          <View style={styles.welcomeContainer}>
+        <ScrollView contentContainerStyle={styles.contentContainer}>
+          <View>
             {
               keys.map(key => <TodoItem key={key} item={this.state.todoList[key]} onPress={() => this.moveToDoneList({ ...this.state.todoList[key], key: key })} />)
             }
