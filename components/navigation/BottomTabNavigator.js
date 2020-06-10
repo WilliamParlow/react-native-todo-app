@@ -1,8 +1,8 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import * as React from 'react';
 import Labels from '../../constants/Labels';
-import DoneList from '../pages/DoneList/DoneList';
-import TodoList from '../pages/TodoList/TodoList';
+import DoneList from '../pages/Todo/DoneList/DoneList';
+import TodoList from '../pages/Todo/TodoList/TodoList';
 import TabBarIcon from '../TabBarIcon';
 import Colors from '../../constants/Colors';
 

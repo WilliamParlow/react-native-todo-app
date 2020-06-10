@@ -16,6 +16,15 @@ export default class FirebaseService {
         return firebase.database().ref(path).set(data);
     }
 
+    static push = (path, data) => {
+        const pushRef = firebase.database().ref(path).push();
+        return pushRef.set(data);
+    }
+
+    static remove = (path) => {
+        return firebase.database().ref(path).remove();
+    }
+
     static signInWithEmailAndPassword = (email, password) => {
         return firebase.auth().signInWithEmailAndPassword(email, password);
     }

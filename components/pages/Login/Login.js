@@ -1,12 +1,12 @@
 import React from 'react';
-import { TextInput, View, Text } from 'react-native';
+import { Text, TextInput, View } from 'react-native';
 import { Button } from 'react-native-elements';
-import FlashMessage, { showMessage } from "react-native-flash-message";
+import { showMessage } from "react-native-flash-message";
 import { connect } from 'react-redux';
-import { setUser } from '../../../redux/actions/userActions';
-import FirebaseService from '../../../services/FirebaseService';
 import Colors from '../../../constants/Colors';
 import Layout from '../../../constants/Layout';
+import { setUser } from '../../../redux/actions/userActions';
+import FirebaseService from '../../../services/FirebaseService';
 
 const ConnectedLogin = props => {
     const [email, onChangeText] = React.useState('');
@@ -28,7 +28,6 @@ const ConnectedLogin = props => {
 
     return (
         <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: Colors.noticeBackground }}>
-            <FlashMessage position="top" />
             <View style={{ marginBottom: 30 }}>
                 <Text style={{ fontSize: 30, color: Colors.noticeText, fontWeight: 'bold' }}>Acesse o Todo App!</Text>
             </View>
