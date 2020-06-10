@@ -75,3 +75,5 @@ buck-out/
 # Expo
 .expo/*
 web-build/
+
+services/FirebaseConfig.js
