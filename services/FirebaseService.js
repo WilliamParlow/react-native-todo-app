@@ -1,16 +1,7 @@
 import * as firebase from 'firebase';
+import { FirebaseConfig } from './FirebaseConfig';
 
-var firebaseConfig = {
-    apiKey: '',
-    authDomain: '',
-    databaseURL: '',
-    projectId: '',
-    storageBucket: '',
-    messagingSenderId: '',
-    appId: ''
-};
-
-firebase.initializeApp(firebaseConfig);
+firebase.initializeApp(FirebaseConfig);
 
 export default class FirebaseService {
     static getOnce = (path, callback) => {
